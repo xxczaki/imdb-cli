@@ -47,7 +47,7 @@ spinner.text = `Searching for: ${title}`
 spinner.start() // Start ora spinner
 
 // get movie info from IMDB
-imdb.get(title, {apiKey: '88c0823e'})
+imdb.get(title, {apiKey: 'YOUR_API_KEY'}) //Get one here: http://www.omdbapi.com/apikey.aspx
     .then(function (data) {
       if (data.type === 'movie') {
         spinner.clear()
